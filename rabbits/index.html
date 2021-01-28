@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Scroll</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: 'Nunito', sans-serif;
+      }
+      .btnRabbit {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding: 8px 18px;
+        border-radius: 8px;
+        background-color: palevioletred;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button class = "btnRabbit">Find a rabbit 🐇</button>
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">>
+      <img id = "rabbit" src = "img/rabbit.png" alt="rabbit">
+      <img src = "img/carrot.png" alt="carrot"></img>
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+      <img src = "img/carrot.png" alt="carrot">
+   
+    <script>
+      const rabbit= document.querySelector('#rabbit');
+      const BtnToRabbit = document.querySelector('.btnRabbit');
+      BtnToRabbit.addEventListener('click', () => {
+        rabbit.scrollIntoView({behavior:"smooth" ,block:"center"});
+      });
+    </script>
+  </body>
+</html>
